@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2Ray</title>
+</head>
+<body>
+    <h1>Welcome to My V2Ray Panel Mr <span th:text="${username}"></span></h1>
+    <h3 th:if="${OnlineStatus}">V2ray Server Is Online</h3>
+    <h3 th:unless="${OnlineStatus}">V2ray Server Is Offline</h3>
+    <p>This page is rendered by Thymeleaf.</p>
+
+    <p th:if="${Users > 100}">server is congested!</p>
+    <p th:unless="${Users > 100}">server is not congested</p>
+    <p th:if="${XrayVersion == '26.0.1'}">the xray core version is matching</p>
+    <p th:unless="${XrayVersion == '26.0.1'}">the xray core version is not matching!!!</p>
+
+    <ul>
+        <li th:each="user1 : ${ListUsers}"
+            th:text="${user1}"> 
+        </li>
+    </ul>
+    <br /><br /><br /><br />
+    <table border="1">
+        <tr>
+            <th>Users</th>
+        </tr>
+        <tr th:each="user2:${ListUsers}">
+            <td th:text="${user2}"></td>
+        </tr>
+    </table>
+</body>
+</html>
