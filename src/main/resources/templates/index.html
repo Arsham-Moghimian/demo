@@ -1,34 +1,92 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V2Ray</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="img/png" href="icon/icons8-v2ray-64.png" />
+    <title>V2ray Panel</title>
 </head>
-<body>
-    <h1>Welcome to My V2Ray Panel Mr <span th:text="${username}"></span></h1>
-    <h3 th:if="${OnlineStatus}">V2ray Server Is Online</h3>
-    <h3 th:unless="${OnlineStatus}">V2ray Server Is Offline</h3>
-    <p>This page is rendered by Thymeleaf.</p>
-
-    <p th:if="${Users > 100}">server is congested!</p>
-    <p th:unless="${Users > 100}">server is not congested</p>
-    <p th:if="${XrayVersion == '26.0.1'}">the xray core version is matching</p>
-    <p th:unless="${XrayVersion == '26.0.1'}">the xray core version is not matching!!!</p>
-
-    <ul>
-        <li th:each="user1 : ${ListUsers}"
-            th:text="${user1}"> 
-        </li>
-    </ul>
-    <br /><br /><br /><br />
-    <table border="1">
-        <tr>
-            <th>Users</th>
-        </tr>
-        <tr th:each="user2:${ListUsers}">
-            <td th:text="${user2}"></td>
-        </tr>
-    </table>
+<body>  
+    <header>
+        <div id="header_div">
+            <div id="header_div_num1">
+                <div id="header_div_num1_num1">
+                    <a href="" id="header_div_num1_num1_a">
+                        <img src="icon/icons8-chevron-left-48.png" id="header_div_num1_num1_img" />
+                    </a>
+                </div>
+            </div>
+            <div id="header_div_num2">
+                <div id="header_div_num2_num1">
+                    <span>Search</span>
+                </div>
+            </div>
+            <div id="header_div_num3">
+                <div id="header_div_num3_num1">
+                    <a href="" id="header_div_num3_num1_a">
+                        <img src="icon/icons8-menu-64.png" id="header_div_num3_num1_img" />
+                    </a>
+                </div>
+                <div id="header_div_num3_num2">
+                    <span>???</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside id="section1">
+            <nav id="aside1_vertical_nav1">
+                <ul id="aside1_unordered_list1">
+                    <li class="side_panel_objects" id="main_side_panel_image_li">
+                        <a href="html_pages/" class="side_panel_object_links" id="main_side_panel_image">
+                            <img src="icon/icons8-v2ray-64.png" id="main_side_panel_image_img">
+                        </a>
+                    </li>
+                    <li class="side_panel_objects">
+                        <a href="html_pages/page1.html" class="side_panel_object_links">
+                            <img width="20px" height="20px" src="icon/icons8-home.svg" />
+                            <pre>  Home</pre>
+                        </a>
+                    </li>
+                    <li class="side_panel_objects">
+                        <a href="html_pages/page1.html" class="side_panel_object_links">
+                            <img width="20px" height="20px" src="icon/icons8-user-30.png" />
+                            <pre>  Users</pre>
+                        </a>
+                    </li>
+                    <li class="side_panel_objects">
+                        <a href="html_pages/page1.html" class="side_panel_object_links">
+                            <img width="20px" height="20px" src="icon/icons8-cube-50.png" />
+                            <pre>  Nodes</pre>
+                        </a>
+                    </li>
+                    <li class="side_panel_objects">
+                        <a href="html_pages/page1.html" class="side_panel_object_links">
+                            <img width="20px" height="20px" src="icon/icons8-server-64.png" />
+                            <pre>  Hosts</pre>
+                        </a>
+                    </li>
+                    <li class="side_panel_objects">
+                        <a href="html_pages/page1.html" class="side_panel_object_links">
+                            <img width="20px" height="20px" src="icon/icons8-einstellungen.svg" />
+                            <pre>  Settings</pre>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="section2">
+            <div id="system_traffics">
+                Comming Soon!
+            </div >
+            <div id="users_status">
+                Comming Soon!
+            </div>
+            <div id="general_status">
+                Comming Soon!
+            </div>
+        </section>
+    </main>
 </body>
 </html>
