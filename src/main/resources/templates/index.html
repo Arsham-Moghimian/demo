@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,14 +100,14 @@
                             <span>Xray Panel: </span><span>running</span>
                         </div>
                         <div id="general_status_container_text_2">
-                            <span>OS: </span><span>Ubuntu 24.04</span><br /><br />
-                            <span>Up Time: </span><span>24h</span><br /><br />
-                            <span>OS: </span><span>Ubuntu 24.04</span><br /><br />
-                            <span>Hostname: </span><span>Ubuntu_1</span>
+                            <span>OS Version: </span><span th:text="${osVersion}"></span><br /><br />
+                            <span>OS Bitness: </span><span th:text="${osBitness}"></span><br /><br />
+                            <span>System Uptime: </span><span th:text="${systemUptime}">s</span><br /><br />
                         </div>
                         <div id="general_status_container_text_3">
                             <span>IP Address: </span><span>192.168.0.1</span><br /><br />
-                            <span>MAC Address: </span><span>ad:a1:ff:e3</span>
+                            <span>MAC Address: </span><span>ad:a1:ff:e3</span><br /><br />
+                            <span>Hostname: </span><span th:text="${systemHostName}"></span>
                         </div>
                     </div>
 
@@ -116,7 +116,8 @@
                             <span>CPU</span>
                         </div>
                         <div id="general_status_container_graph_cpu_graph">
-                            coming soon!
+                            <span>Physical Cores: </span><span th:text="${systemPhysicalCores}"></span><br /><br />
+                            <span>Logical Cores: </span><span th:text="${systemLogicalCores}"></span><br /><br />
                         </div>
                     </div>
 

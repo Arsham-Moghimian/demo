@@ -245,18 +245,8 @@ header{
     transition-timing-function: linear;
     transition-delay: 0ms;
 }
-.side_panel_object_links:hover{
-    background-color: #DBEAFE;
-    color: #2563EB;
-    transform: translateX(3%);
-}
-.side_panel_object_links:active{
-    background-color: #2563EB;
-    color: white;
-}
-
 #main_side_panel_image_li{
-    width: 40%;
+    width: 24%;
     height: 12%;
 }
 #main_side_panel_image{
@@ -267,6 +257,16 @@ header{
     width: 100%;
     height: 100%;
 }
+.side_panel_object_links:hover{
+    background-color: #DBEAFE;
+    color: #2563EB;
+    transform: translateX(3%);
+}
+.side_panel_object_links:active{
+    background-color: #2563EB;
+    color: white;
+}
+
 
 
 /*---------------------------------------- The Main Panel ----------------------------------------*/
@@ -477,8 +477,9 @@ header{
 }
 #general_status_container_graph_cpu_graph{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 
     width: 100%;
     height: 75%;
