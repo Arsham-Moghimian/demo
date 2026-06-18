@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="img/png" href="icon/icons8-v2ray-64.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/icon/icons8-v2ray-64.png" />
     <title>V2ray Panel</title>
 </head>
 <body>  
@@ -13,7 +13,7 @@
             <div id="header_div_num1">
                 <div id="header_div_num1_num1">
                     <a href="" id="header_div_num1_num1_a">
-                        <img src="icon/icons8-chevron-left-48.png" id="header_div_num1_num1_img" />
+                        <img src="/icon/icons8-chevron-left-48.png" id="header_div_num1_num1_img" />
                     </a>
                 </div>
             </div>
@@ -25,7 +25,7 @@
             <div id="header_div_num3">
                 <div id="header_div_num3_num1">
                     <a href="" id="header_div_num3_num1_a">
-                        <img src="icon/icons8-menu-64.png" id="header_div_num3_num1_img" />
+                        <img src="/icon/icons8-menu-64.png" id="header_div_num3_num1_img" />
                     </a>
                 </div>
                 <div id="header_div_num3_num2">
@@ -40,37 +40,37 @@
                 <ul id="aside1_unordered_list1">
                     <li class="side_panel_objects" id="main_side_panel_image_li">
                         <a href="html_pages/" class="side_panel_object_links" id="main_side_panel_image">
-                            <img src="icon/icons8-v2ray-64.png" id="main_side_panel_image_img">
+                            <img src="/icon/icons8-v2ray-64.png" id="main_side_panel_image_img">
                         </a>
                     </li>
                     <li class="side_panel_objects">
                         <a href="html_pages/page1.html" class="side_panel_object_links">
-                            <img width="20px" height="20px" src="icon/icons8-home.svg" />
-                            <pre>  Home</pre>
+                            <img width="20px" height="20px" src="/icon/icons8-home.svg" />
+                            <span style="margin-left: 0.5rem;">Home</span>
                         </a>
                     </li>
                     <li class="side_panel_objects">
                         <a href="html_pages/page1.html" class="side_panel_object_links">
-                            <img width="20px" height="20px" src="icon/icons8-user-30.png" />
-                            <pre>  Users</pre>
+                            <img width="20px" height="20px" src="/icon/icons8-user-30.png" />
+                            <span style="margin-left: 0.5rem;">  Users</span>
                         </a>
                     </li>
                     <li class="side_panel_objects">
                         <a href="html_pages/page1.html" class="side_panel_object_links">
-                            <img width="20px" height="20px" src="icon/icons8-cube-50.png" />
-                            <pre>  Nodes</pre>
+                            <img width="20px" height="20px" src="/icon/icons8-cube-50.png" />
+                            <span style="margin-left: 0.5rem;">  Nodes</span>
                         </a>
                     </li>
                     <li class="side_panel_objects">
                         <a href="html_pages/page1.html" class="side_panel_object_links">
-                            <img width="20px" height="20px" src="icon/icons8-server-64.png" />
-                            <pre>  Hosts</pre>
+                            <img width="20px" height="20px" src="/icon/icons8-server-64.png" />
+                            <span style="margin-left: 0.5rem;">  Hosts</span>
                         </a>
                     </li>
                     <li class="side_panel_objects">
                         <a href="html_pages/page1.html" class="side_panel_object_links">
-                            <img width="20px" height="20px" src="icon/icons8-einstellungen.svg" />
-                            <pre>  Settings</pre>
+                            <img width="20px" height="20px" src="/icon/icons8-einstellungen.svg" />
+                            <span style="margin-left: 0.5rem;">  Settings</span>
                         </a>
                     </li>
                 </ul>
@@ -78,13 +78,76 @@
         </aside>
         <section id="section2">
             <div id="system_traffics">
-                Comming Soon!
-            </div >
+                <span id="system_traffics_text">System Traffics</span>
+                <div id="system_traffics_container">
+                    coming soon!
+                </div>
+            </div>
             <div id="users_status">
-                Comming Soon!
+                <span id="users_status_text">User Status</span>
+                <div id="users_status_container">
+                    coming soon!
+                </div>
             </div>
             <div id="general_status">
-                Comming Soon!
+                <p id="general_status_text">General Status</p>
+                <div id="general_status_container">
+                    <div id="general_status_container_text">
+                        <div id="general_status_container_text_1">
+                            <span>Xray Status: </span><span>active</span><br /><br />
+                            <span>Xray Enabled: </span><span>enabled</span><br /><br />
+                            <span>Xray Version: </span><span>26.0.3</span><br /><br />
+                            <span>Xray Panel: </span><span>running</span>
+                        </div>
+                        <div id="general_status_container_text_2">
+                            <span>OS: </span><span>Ubuntu 24.04</span><br /><br />
+                            <span>Up Time: </span><span>24h</span><br /><br />
+                            <span>OS: </span><span>Ubuntu 24.04</span><br /><br />
+                            <span>Hostname: </span><span>Ubuntu_1</span>
+                        </div>
+                        <div id="general_status_container_text_3">
+                            <span>IP Address: </span><span>192.168.0.1</span><br /><br />
+                            <span>MAC Address: </span><span>ad:a1:ff:e3</span>
+                        </div>
+                    </div>
+
+                    <div id="general_status_container_graph_cpu">
+                        <div id="general_status_container_graph_cpu_header">
+                            <span>CPU</span>
+                        </div>
+                        <div id="general_status_container_graph_cpu_graph">
+                            coming soon!
+                        </div>
+                    </div>
+
+                    <div id="general_status_container_graph_ram">
+                        <div id="general_status_container_graph_ram_header">
+                            <span>RAM</span>
+                        </div>
+                        <div id="general_status_container_graph_ram_graph">
+                            coming soon!
+                        </div>
+                    </div>
+
+                    <div id="general_status_container_graph_storage">
+                        <div id="general_status_container_graph_storage_header">
+                            <span>Storage</span>
+                        </div>
+                        <div id="general_status_container_graph_storage_graph">
+                            coming soon!
+                        </div>
+                    </div>
+
+                    <div id="general_status_container_graph_network">
+                        <div id="general_status_container_graph_network_header">
+                            <span>Network</span>
+                        </div>
+                        <div id="general_status_container_graph_network_graph">
+                            coming soon!
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </section>
     </main>
