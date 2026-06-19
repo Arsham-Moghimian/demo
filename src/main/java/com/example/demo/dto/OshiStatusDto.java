@@ -9,7 +9,9 @@ public record OshiStatusDto(
 		long systemUptime,
 		int systemPhysicalCores,
 		int systemLogicalCores,
-		String systemHostname
+		String systemHostname,
+		String systemCpuName,
+		long[] systemCpuFreq
 		) {
 	
 }

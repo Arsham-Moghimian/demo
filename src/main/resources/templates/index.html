@@ -100,14 +100,14 @@
                             <span>Xray Panel: </span><span>running</span>
                         </div>
                         <div id="general_status_container_text_2">
-                            <span>OS Version: </span><span th:text="${osVersion}"></span><br /><br />
-                            <span>OS Bitness: </span><span th:text="${osBitness}"></span><br /><br />
-                            <span>System Uptime: </span><span th:text="${systemUptime}">s</span><br /><br />
+                            <span th:inline="text">OS Version: [[${osVersion}]]</span><br /><br />
+                            <span th:inline="text">OS Bitness: [[${osBitness}]]</span><br /><br />
+                            <span th:inline="text">System Uptime: [[${systemUptime}]]</span><br /><br />
                         </div>
                         <div id="general_status_container_text_3">
                             <span>IP Address: </span><span>192.168.0.1</span><br /><br />
                             <span>MAC Address: </span><span>ad:a1:ff:e3</span><br /><br />
-                            <span>Hostname: </span><span th:text="${systemHostName}"></span>
+                            <span th:inline="text">Hostname: [[${systemHostName}]]</span>
                         </div>
                     </div>
 
@@ -116,8 +116,10 @@
                             <span>CPU</span>
                         </div>
                         <div id="general_status_container_graph_cpu_graph">
-                            <span>Physical Cores: </span><span th:text="${systemPhysicalCores}"></span><br /><br />
-                            <span>Logical Cores: </span><span th:text="${systemLogicalCores}"></span><br /><br />
+                            <span th:inline="text">CPU: [[${systemCpuName}]]</span><br />
+                            <span th:inline="text">CPU Frequency: [[${systemCpuFreq}]]</span><br />
+                            <span th:inline="text">Physical Cores: [[${systemPhysicalCores}]]</span><br />
+                            <span th:inline="text">Logical Cores: [[${systemLogicalCores}]]</span><br />
                         </div>
                     </div>
 

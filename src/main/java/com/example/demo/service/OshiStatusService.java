@@ -19,6 +19,8 @@ public class OshiStatusService {
 	
 	int systemPhysicalCores=si.getHardware().getProcessor().getPhysicalProcessorCount();
 	int systemLogicalCores=si.getHardware().getProcessor().getLogicalProcessorCount();
+	String systemCpuName=si.getHardware().getProcessor().getProcessorIdentifier().getName();
+	long[] systemCpuFreq=si.getHardware().getProcessor().getCurrentFreq();
 	
 	String systemHostname=si.getOperatingSystem().getNetworkParams().getHostName();
 	
@@ -29,7 +31,9 @@ public class OshiStatusService {
 			systemUptime,
 			systemPhysicalCores,
 			systemLogicalCores,
-			systemHostname
+			systemHostname,
+			systemCpuName,
+			systemCpuFreq
 			);
 	}
 }

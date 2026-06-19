@@ -33,8 +33,10 @@ public class HomeController {
 		
 		model.addAttribute("systemPhysicalCores",oshiDto.systemPhysicalCores());
 		model.addAttribute("systemLogicalCores",oshiDto.systemLogicalCores());
+		model.addAttribute("systemCpuName", oshiDto.systemCpuName());
+		model.addAttribute("systemCpuFreq", oshiDto.systemCpuFreq());
 		
-		model.addAttribute("systemHostname", oshiDto.systemHostname());
+		model.addAttribute("systemHostname", oshiDto.systemHostname());		
 		
 		return "index";
 	}
